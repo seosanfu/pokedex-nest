@@ -12,9 +12,9 @@ async function bootstrap() {
       transform: true,
       transformOptions: {
         enableImplicitConversion: true,
-      }
+      },
     }),
   );
-  await app.listen(3005);
+  await app.listen(process.env.PORT);
 }
 bootstrap();
